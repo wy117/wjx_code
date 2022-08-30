@@ -1,0 +1,49 @@
+<!-- HTML<head>元素和<body>元素不同，它的内容不会在浏览器中显示，它的作用是保存页面的一些元数据 -->
+
+<!-- 01添加标题 -->
+<!-- <h1>元素在页面加载完毕时显示在页面中，通常只出现一次。用来标记页面内容的标题（故事、名称、新闻摘要等） -->
+<!-- <title>元素是一项元数据，用于表示整个HTML文档的标题 -->
+<!-- <title>元素也被作为页面的书签名 -->
+<!-- <title>元素的内容也被用在搜索的结果中 -->
+
+<!-- 02元数据：<meta>元素 -->
+<!-- 元数据就是描述数据的数据，HTML有一个官方的方式来为一个文档添加元数据——<meta>元素 -->
+<!-- 指定文档中的字符编码 -->
+<meta charset="utf-8" />
+<!-- 添加作者和描述 -->
+<!-- name制定了meta元素的类型，说明该元素包含了什么类型的信息 -->
+<!-- content指定了实际的元数据内容 -->
+<meta name="author" content="Chris Mills" />
+<meta
+  name="description"
+  content="The MDN Web Docs Learning Area aims to provide
+complete beginners to the Web with all they need to know to get
+started with developing web sites and applications."
+/>
+
+<!-- 03 在你的站点增加自定义标签 -->
+<!-- 页面添加图标的方式有： -->
+<!-- a.将其保存在与网站索引页面相同的目录中，以点.ico格式保存 -->
+<!-- b.将以下行代码添加到HTML的<head>中以引用它 -->
+<link rel="icon" href="facivon.svg" type="image/xicon">
+<!-- third-generation iPad with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://developer.mozilla.org/static/img/favicon144.png">
+<!-- iPhone with high-resolution Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://developer.mozilla.org/static/img/favicon114.png">
+<!-- first- and second-generation iPad: -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://developer.mozilla.org/static/img/favicon72.png">
+<!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+<link rel="apple-touch-icon-precomposed" href="https://developer.mozilla.org/static/img/favicon57.png">
+<!-- basic favicon -->
+<link rel="icon" href="https://developer.mozilla.org/static/img/favicon32.png">
+
+<!-- 04在HTML中应用CSS的JavaScript -->
+<!-- <link>元素经常位于文档的头部，这里的Link有两个属性,rel="stylesheet"表明这是文档的样式表，而href包含了样式表文件的路径 -->
+<link rel="stylesheet" href="my-css-file.css">
+<!-- <script>元素没必要非要放在文档的 <head> 中，并包含 src 属性来指向需要加载的 JavaScript 文件路径，同时最好加上 defer 以告诉浏览器在解析完成 HTML 后再加载 JavaScript。 -->
+<!-- 这样可以确保在加载脚本之前浏览器已经解析了所有的 HTML 内容 -->
+<script src="my-js-file.js" defer></script>
+
+<!-- 05为文档设定主语言 -->
+<!-- 可以通过添加lang属性到HTML开始的标签中来实现 -->
+<html lang="zh-CN"></html>
